@@ -46,6 +46,7 @@
     padding: 0;
 }
 
+
 body {
     font-family: 'Poppins', sans-serif;
     position: relative;
@@ -1486,4 +1487,39 @@ li {
 	z-index: 99999;
 	color: #fff;
 	cursor: pointer;
+}
+
+.parallax { 
+    /* The image used */
+    background-image: url("img/parallax.jpg");
+
+    /* Set a specific height */
+    height: 600px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-mid { 
+    /* The image used */
+    background-image: url("img/inv1.jpeg");
+
+    /* Set a specific height */
+    height: 900px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+    .parallax, .parallax-mid {
+        background-attachment: scroll;
+    }
 }

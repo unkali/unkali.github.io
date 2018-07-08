@@ -1,5 +1,5 @@
 var map;
-var latlng = new google.maps.LatLng(40.730610, -73.935242);
+var latlng = new google.maps.LatLng(26.8789539,75.7428575);
 var stylez = [{
     featureType: "all",
     elementType: "all",
@@ -19,7 +19,7 @@ var mapOptions = {
 };
 map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
 var geocoder_map = new google.maps.Geocoder();
-var address = 'New york';
+var address = 'Hotel K Mahaveer';
 geocoder_map.geocode({
     'address': address
 }, function (results, status) {
